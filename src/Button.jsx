@@ -16,15 +16,28 @@ const Btn = styled.div`
   cursor: pointer;
 `;
 
+// const Button = () => {
+//   let [modalbox, setModalbox] = useState(false);
+//   const isOn = () => {
+//     setModalbox(!modalbox);
+//   };
+//   return (
+//     <div>
+//       <Btn onClick={isOn}>버튼</Btn>
+//       <Modal onFu={modalbox}></Modal>
+//     </div>
+//   );
+// };
+
 const Button = () => {
   let [modalbox, setModalbox] = useState(false);
-  const isOn = () => {
+  const bbttn = () => {
     setModalbox(!modalbox);
   };
   return (
     <div>
-      <Btn onClick={isOn}>버튼</Btn>
-      <Modal onFu={modalbox}></Modal>
+      <Btn onClick={bbttn}>버튼</Btn>
+      <Modal btmodal={modalbox}></Modal>
     </div>
   );
 };
