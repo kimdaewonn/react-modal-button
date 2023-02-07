@@ -3,8 +3,6 @@ import styled from "styled-components";
 import Modal from "./Modal";
 import { useState } from "react";
 
-let [modalbox, setModalbox] = useState(false);
-
 const Btn = styled.div`
   width: 100px;
   height: 50px;
@@ -17,18 +15,16 @@ const Btn = styled.div`
   font-size: 20px;
   cursor: pointer;
 `;
+
 const Button = () => {
+  let [modalbox, setModalbox] = useState(false);
+  const isOn = () => {
+    setModalbox(!modalbox);
+  };
   return (
     <div>
-      {/* <Link to="/">홈으로</Link> */}
-      <Btn
-        onClick={() => {
-          setModalbox(!modalbox);
-        }}
-      >
-        버튼
-      </Btn>
-      {modalbox === true ? <Modal></Modal> : null}
+      <Btn onClick={isOn}>버튼</Btn>
+      <Modal onFu={modalbox}></Modal>
     </div>
   );
 };

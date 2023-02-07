@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { useState } from "react";
 
 const Box = styled.div`
   width: 600px;
@@ -12,15 +10,18 @@ const Box = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: ${(props) => (props.ison ? "none" : "flex")};
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 `;
 
-function Modal() {
+const Modal = (props) => {
   return (
     <div>
-      {/* <Link to="/">홈으로</Link> */}
-      <Box />
+      <Box ison={props.onFu}>모달</Box>
     </div>
   );
-}
+};
 
 export default Modal;
