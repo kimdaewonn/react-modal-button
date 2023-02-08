@@ -1,13 +1,14 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.buttongroup1 {
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.buttongroup2 {
+  float: right;
+}
+.material {
+  margin-left: 100px;
+}
+.MuiButtonGroup-root.MuiButtonGroup-outlined.buttongroup1.css-iajp3t-MuiButtonGroup-root {
+  margin-top: 20px;
+}
+.MuiButtonGroup-root.MuiButtonGroup-text.buttongroup2.css-1or64il-MuiButtonGroup-root {
+  margin-top: 20px;
 }
